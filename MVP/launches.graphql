@@ -1,0 +1,8 @@
+query launches {
+  launchesPast {
+    mission_name
+    launch_site {
+      site_name_long
+    }
+  }
+}
