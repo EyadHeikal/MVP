@@ -9,16 +9,23 @@
 import UIKit
 
 class MainTableCell: UITableViewCell {
+    
+    static let cellReuseIdentifier = "LaunchCell"
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
+    
+    func setupCell(row: Int, presenter: MainPresenter?) {
+        self.textLabel?.text = presenter?.getLaunchesArray()[row]
+        //self.detailTextLabel?.text = 
+    }
+}
 
+extension UITableViewCell {
+    
 }

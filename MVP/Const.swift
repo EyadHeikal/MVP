@@ -10,5 +10,5 @@ import Foundation
 
 struct Const {
     static let API = "https://api.spacex.land/graphql/"
-    static let cellReuseIdentifier = "LaunchCell"
+    //static let cellReuseIdentifier = "LaunchCell"
 }

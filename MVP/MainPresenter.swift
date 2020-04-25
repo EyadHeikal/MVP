@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MainPresenter {
+class MainPresenter: MainPresenterProtocol {
     
     weak var view: MainView?
     //private let service = Service()
@@ -39,7 +39,7 @@ class MainPresenter {
         return launchesArray.count
     }
     
-    func getLaunchesArray() -> [String]? {
+    func getLaunchesArray() -> [String] {
         
         return launchesArray
     }

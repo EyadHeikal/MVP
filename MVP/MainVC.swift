@@ -26,17 +26,15 @@ class MainVC: UIViewController {
 
 extension MainVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(present!.getLaunches())
-        return present!.getLaunches()
+        print(present?.getLaunches() as Any)
+        guard let x = present?.getLaunches() else {fatalError("Presenter in equal nil")}
+        return x
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: Const.cellReuseIdentifier)
-        
-        cell.textLabel?.text = present!.getLaunchesArray()?[indexPath.row]
-        print(present!.getLaunchesArray()?[indexPath.row])
-        
+        let cell = MainTableCell(style: .subtitle, reuseIdentifier: MainTableCell.cellReuseIdentifier)
+        cell.setupCell(row: indexPath.row, presenter: present)
         return cell
         
     }

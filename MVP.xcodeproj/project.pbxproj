@@ -21,7 +21,7 @@
 		865D84E8244B8960003A6561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865D84E6244B8960003A6561 /* Main.storyboard */; };
 		865D84EA244B8963003A6561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 865D84E9244B8963003A6561 /* Assets.xcassets */; };
 		865D84ED244B8963003A6561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865D84EB244B8963003A6561 /* LaunchScreen.storyboard */; };
-		86EAB84A244E05FF00F7A399 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EAB849244E05FF00F7A399 /* MyCell.swift */; };
+		8690DB7F2453B877009B3BB5 /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690DB7E2453B877009B3BB5 /* Contract.swift */; };
 		86EAB84C244E06B800F7A399 /* MainTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EAB84B244E06B800F7A399 /* MainTableCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +41,7 @@
 		865D84E9244B8963003A6561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		865D84EC244B8963003A6561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		865D84EE244B8963003A6561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86EAB849244E05FF00F7A399 /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		8690DB7E2453B877009B3BB5 /* Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
 		86EAB84B244E06B800F7A399 /* MainTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +72,7 @@
 		8646A293244D07D60001DD23 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8690DB7D2453B84F009B3BB5 /* Contracts */,
 				8617B4E8244DA39900434A10 /* GraphQL */,
 				8617B4E2244D9ED200434A10 /* Service.swift */,
 			);
@@ -84,6 +85,7 @@
 				865D84EB244B8963003A6561 /* LaunchScreen.storyboard */,
 				865D84E6244B8960003A6561 /* Main.storyboard */,
 				865D84E4244B8960003A6561 /* MainVC.swift */,
+				86EAB84B244E06B800F7A399 /* MainTableCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -93,8 +95,6 @@
 			children = (
 				8646A28F244C82850001DD23 /* MainPresenter.swift */,
 				8646A291244C82AF0001DD23 /* MainView.swift */,
-				86EAB849244E05FF00F7A399 /* MyCell.swift */,
-				86EAB84B244E06B800F7A399 /* MainTableCell.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -136,6 +136,14 @@
 				8646A296244D083E0001DD23 /* Resources */,
 			);
 			path = MVP;
+			sourceTree = "<group>";
+		};
+		8690DB7D2453B84F009B3BB5 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				8690DB7E2453B877009B3BB5 /* Contract.swift */,
+			);
+			name = Contracts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,8 +253,8 @@
 				865D84E3244B8960003A6561 /* SceneDelegate.swift in Sources */,
 				8646A292244C82AF0001DD23 /* MainView.swift in Sources */,
 				86EAB84C244E06B800F7A399 /* MainTableCell.swift in Sources */,
+				8690DB7F2453B877009B3BB5 /* Contract.swift in Sources */,
 				8625FDFC244DB036005C16BE /* Const.swift in Sources */,
-				86EAB84A244E05FF00F7A399 /* MyCell.swift in Sources */,
 				8617B4E3244D9ED200434A10 /* Service.swift in Sources */,
 				8617B4E7244DA20100434A10 /* API.swift in Sources */,
 			);

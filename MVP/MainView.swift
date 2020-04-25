@@ -8,10 +8,6 @@
 
 import Foundation
 
-protocol MainView: class {
-    func reloadData()
-}
-
 extension MainVC: MainView {
     
     func reloadData() {
